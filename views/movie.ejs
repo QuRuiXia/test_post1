@@ -1,0 +1,63 @@
+<% include ./includes/header %>
+<div class="container">
+    <div class="row">
+        <form action="/admin/add" class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>电影名称</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputTitle" name="title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>导演</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputDirector"
+                    " name="director">
+                </div>
+            </div> 
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>国家</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputCountry" name="country">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>上映年份</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputYear" name="year">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>海报地址</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputPoster" name="poster">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>语言</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputLanguage" name="language">
+                </div>
+            </div> 
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>片源地址</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputFlash" name="flash">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-md-3" control-label>简介</label>
+                <div class="col-md-9">
+                    <textarea type="text" class="form-control" id="inputSummary" name="sumary"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-11 col-md-1">
+                    <button class="btn btn-default" id="addOption">录入</button>
+                </div>
+            </div>          
+        </form>
+    </div>
+</div>
+</body>
+</html>

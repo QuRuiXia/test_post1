@@ -1,0 +1,31 @@
+		<% include ./includes/header %>
+<div class="container">
+	<div class="row">
+		<table class="table table-hover table-border">
+			<thead>
+				<th>电影名称</th>
+				<th>导演</th>
+				<th>国家</th>
+				<th>上映年份</th>
+				<th>查看</th>
+				<th>更新</th>
+				<th>删除</th>
+			</thead>
+			<tbody>
+				<%for(var i=0;i<movies.length;i++){%>
+					<tr class="item-id-1">
+						<td><%=movies[i].title%></td>
+						<td><%=movies[i].director%></td>
+						<td><%=movies[i].country%></td>
+						<td><%=movies[i].year%></td>
+						<td><a target="_blank" href="../detail/<%=movies[i]._id%>">查看</a></td>
+						<td><button class="btn btn-warnning del">修改</button></td>
+						<td><button class="btn btn-danger del">删除</button></td>
+					</tr>
+				<%}%>	
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

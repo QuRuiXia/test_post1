@@ -1,0 +1,20 @@
+<% include ./includes/header %>
+	<div class="container">
+		<div class="row">
+			<%for(var i=0;i<movies.length;i++){%>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<img src="<%=movies[i].poster%>">
+					</div>
+					<div class="caption">
+						<h3><%=movies[i].title%></h3>
+						<p>
+							<a class="btn btn-primary" href="/detail/<%=movies[i]._id%>">观看影片</a>
+						</p>
+					</div>
+				</div>
+			<%}%>
+		</div>
+	</div>	
+</body>
+</html>

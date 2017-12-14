@@ -1,0 +1,24 @@
+<% include ./includes/header %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-7">
+			<embed src="<%=movies.flash%>" allowFullScreen="true" quality="high" width="720" height="500" align="middle" type="application/x-shockwave-flash" />	
+		</div>
+		<div class="col-md-5">
+			<dl class="dl-horizontal">
+					<dt>电影名称</dt>
+					<dd><%=movies.title%></dd>
+					<dt>导演</dt>
+					<dd><%=movies.director%></dd>
+					<dt>上映年份</dt>
+					<dd><%=movies.year%></dd>
+					<dt>语言</dt>
+					<dd><%=movies.language%></dd>
+					<dt>简介</dt>
+					<dd><%=movies.sumary%></dd>
+				</dl>		
+		</div>
+	</div>
+</div>
+</body>
+</html>
